@@ -42,14 +42,21 @@
 
 
     <div class="wrapper">
-      <header>
+<header>
         <h1>android-store</h1>
-        <p>The Android flavor of The Open Code Project for In App Purchasing.</p>
+
+        <p>In-App Billing Library for Android:</p>
+		<ul class="info">
+            <li>Simplifies The Google Play API</li>
+            <li>Storage for Virtual Currency/Goods Balances</li>
+            <li>Improved Security</li>
+            <li>Event Handling</li>
+		</ul>
 
         <p class="view"><a href="https://github.com/soomla/android-store">View the Project on GitHub <small>soomla/android-store</small></a></p>
 
 
-        <ul>
+        <ul class="actions">
           <li><a href="https://github.com/soomla/android-store/zipball/master" onclick="_gaq.push(['_trackEvent', 'immediate_goals', 'android_code_download', 'Someone wants our ZIP !']);">Download <strong>ZIP File</strong></a></li>
           <li><a href="https://github.com/soomla/android-store/tarball/master" onclick="_gaq.push(['_trackEvent', 'immediate_goals', 'android_code_download', 'Someone wants our TAR !']);">Download <strong>TAR Ball</strong></a></li>
           <li><a href="https://github.com/soomla/android-store" onclick="_gaq.push(['_trackEvent', 'immediate_goals', 'android_project_view', 'Someone wants to view our project !']);">View On <strong>GitHub</strong></a></li>
@@ -58,13 +65,31 @@
             &nbsp;</p><p></p><h1>More Projects</h1><p>
           Coming Soon...
         </p>
-        <p>
-            <span style="color: black; font-weight: bold;">SUBSCRIBE TO UPDATES ON FACEBOOK</span>
-            <fb:like href="https://www.facebook.com/The.SOOMLA.Project" send="true" layout="box_count" width="250" show_faces="false" font="tahoma"></fb:like>
-        </p>
 
-      </header>
-      <section>
+        <table border="0">
+            <tbody>
+            <tr>
+                <td>
+                    <fb:like href="https://www.facebook.com/The.SOOMLA.Project" send="true" layout="box_count" width="250"
+                             show_faces="false" font="tahoma" class="fb_edge_widget_with_comment fb_iframe_widget"><span
+                            style="height: 86px; width: 50px; "><iframe id="f3420ba1f4" name="f6a0a55a4" scrolling="no"
+                                                                        style="border: none; overflow: hidden; height: 86px; width: 50px; "
+                                                                        title="Like this content on Facebook."
+                                                                        class="fb_ltr"
+                                                                        src="http://www.facebook.com/plugins/like.php?api_key=409611972431183&amp;channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D11%23cb%3Df9cf5afb4%26origin%3Dhttp%253A%252F%252Fproject.soom.la%252Ff1837af578%26domain%3Dproject.soom.la%26relation%3Dparent.parent&amp;extended_social_context=false&amp;font=tahoma&amp;href=https%3A%2F%2Fwww.facebook.com%2FThe.SOOMLA.Project&amp;layout=box_count&amp;locale=en_US&amp;node_type=link&amp;sdk=joey&amp;send=true&amp;show_faces=false&amp;width=250"></iframe></span>
+                    </fb:like>
+                </td>
+                <td style="vertical-align:top"><span style="color: black; font-weight: bold;">SUBSCRIBE TO UPDATES ON FACEBOOK</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+    <p></p>
+
+
+</header>
+<section>
 <a href="https://github.com/soomla/android-store"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
         <p><img src="https://dl.dropbox.com/u/88676957/SoomlaLogo_BlueLogo.png" alt="SOOMLA LOGO"></p>
 
@@ -119,7 +144,7 @@
 <li>
 <p>Create your own implementation of <em>IStoreAssets</em> in order to describe your specific game's assets. Initialize <em>StoreController</em> with the class you just created:</p>
 
-<div class="highlight"><pre>   <span class="n">StoreController</span><span class="o">.</span><span class="na">getInstance</span><span class="o">().</span><span class="na">initialize</span><span class="o">(</span><span class="n">getApplicationContext</span><span class="o">(),</span> 
+<div class="highlight"><pre>   <span class="n">StoreController</span><span class="o">.</span><span class="na">getInstance</span><span class="o">().</span><span class="na">initialize</span><span class="o">(</span><span class="n">getApplicationContext</span><span class="o">(),</span>
                                        <span class="k">new</span> <span class="nf">YourStoreAssetsImplementation</span><span class="o">(),</span>
                                        <span class="s">"YOUR PUBLIC KEY FROM GOOGLE PLAY"</span><span class="o">,</span>
                                        <span class="kc">false</span><span class="o">);</span>
@@ -199,8 +224,6 @@
 </ul>
       </section>
       <footer>
-        <p>This project is maintained by <a href="https://github.com/soomla">Soomla</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
 
